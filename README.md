@@ -49,31 +49,3 @@ Le site n'a pas de serveur : le formulaire ne stocke rien.
 
 Pour recevoir les demandes automatiquement, il faudrait relier le formulaire à un service externe (par exemple Formspree) ou à un back-end.
 
-## Publier avec GitHub Pages
-
-1. Créer un dépôt vide sur GitHub (par exemple `solutech-site`), sans README.
-2. Dans le dossier du projet :
-   ```bash
-   git remote add origin https://github.com/<votre-utilisateur>/solutech-site.git
-   git branch -M main
-   git push -u origin main
-   ```
-3. Sur GitHub : **Settings → Pages → Build and deployment → Deploy from a branch**, choisir `main` et `/ (root)`.
-4. Le site sera disponible à l'adresse `https://<votre-utilisateur>.github.io/solutech-site/`.
-
-## Règles pour les commits
-
-Chaque modification fait l'objet d'un commit **en français** qui explique ce qui change et pourquoi.
-
-- Titre court (moins de 70 caractères) commençant par un verbe : `Ajout`, `Modification`, `Correction`, `Suppression`.
-- Une ligne vide, puis une liste qui détaille les changements.
-- Chaque modification est aussi notée dans `CHANGELOG.md`.
-
-Exemple :
-
-```
-Correction de l'envoi du formulaire par WhatsApp
-
-- Utilisation de wa.me à la place de api.whatsapp.com
-- Ajout d'un lien de secours si WhatsApp ne s'ouvre pas
-```
