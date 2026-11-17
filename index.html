@@ -164,7 +164,9 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;ba
     <a href="#services">Services</a><a href="#audit">Audit gratuit</a><a href="#faq">Questions</a>
     <a class="btn" href="#contact">Nous contacter</a>
   </nav>
-</div></header>
+</div>
+<link rel="icon" type="image/png" href="/assets/solutech-logo.png" sizes="32x32">
+</header>
 
 <main id="top">
 <div class="hero"><div class="wrap">
@@ -287,6 +289,12 @@ mn.addEventListener("click",function(e){if(e.target.closest("a"))setMenu(false)}
 document.addEventListener("click",function(e){if(!mn.contains(e.target))setMenu(false)});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")setMenu(false)});
 window.addEventListener("resize",function(){if(window.innerWidth>760)setMenu(false)});
+
+<!-- Vercel Analytics -->
+window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 </script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
+
+
